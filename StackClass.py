@@ -32,6 +32,15 @@ class ArrayStack:
         
     def size(self): 
         return self.top + 1
+    
+    def clear(self):
+            self.top -= 1
+    
+    def display(self):
+        for i in (self.top+1):
+            print(self.array[i], end='')
+        
+        
 
 
 stk1 = ArrayStack(100)  
